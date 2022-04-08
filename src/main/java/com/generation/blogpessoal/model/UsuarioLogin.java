@@ -1,5 +1,7 @@
 package com.generation.blogpessoal.model;
 
+import java.time.LocalDate;
+
 public class UsuarioLogin {
 
 	private Long id;
@@ -13,6 +15,16 @@ public class UsuarioLogin {
 	private String foto;
 
 	private String token;
+	
+	private LocalDate dataNascimento;
+
+	public LocalDate getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(LocalDate dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
 
 	public Long getId() {
 		return id;
